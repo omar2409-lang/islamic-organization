@@ -1,0 +1,172 @@
+/*
+ * custom.css
+ * CCBIFI - Centro Cultural Beneficente Islâmico de Foz do Iguaçu
+ * تخصيص ألوان الموقع لتتطابق مع لوغو المنظمة
+ * اللون الأساسي المستخرج من logo.png: #1A5C38
+ */
+
+/* ===== CSS Custom Properties (Variables) ===== */
+:root {
+  --color-theme: #1A5C38;
+  --color-theme-dark: #134529;
+  --color-theme-light: #22723f;
+  --color-theme-hover: #0f3d23;
+}
+
+/* ===== Override ALL theme colors to match logo ===== */
+
+/* Selection */
+::-moz-selection { background: var(--color-theme) !important; }
+::selection { background: var(--color-theme) !important; }
+
+/* Scroll Up Button */
+a#scrollUp:hover { background: var(--color-theme) !important; }
+
+/* Color helpers */
+.color--theme { color: var(--color-theme) !important; }
+.bg--theme { background: var(--color-theme) !important; }
+.cr-border.cr-border--theme { border-color: var(--color-theme) !important; }
+
+/* Buttons */
+.cr-btn--theme {
+  background: var(--color-theme) !important;
+  border-color: var(--color-theme) !important;
+}
+.cr-btn--theme:hover {
+  background: var(--color-theme-dark) !important;
+  border-color: var(--color-theme-dark) !important;
+}
+.cr-btn--transparent {
+  border-color: var(--color-theme) !important;
+  color: var(--color-theme) !important;
+}
+.cr-btn--transparent:hover {
+  background: var(--color-theme) !important;
+  color: #ffffff !important;
+}
+
+/* Header Navigation Bottom Bar */
+.header__bottom.bg--theme,
+.header__bottom {
+  background: var(--color-theme) !important;
+}
+
+/* Navigation Links */
+.menu > ul > li > a:hover,
+.menu > ul > li.active > a {
+  color: var(--color-theme-light) !important;
+}
+.cr-dropdown-menu { border-top-color: var(--color-theme) !important; }
+.cr-dropdown-menu li a:hover { color: var(--color-theme) !important; }
+
+/* Banner content */
+.banner__content.color--theme h1,
+.banner__content.color--theme h2,
+.banner__content.color--theme h3,
+.banner__content.color--theme h4,
+.banner__content.color--theme h5,
+.banner__content.color--theme p { color: var(--color-theme) !important; }
+
+/* Section Title */
+.section-title h4 { color: var(--color-theme) !important; }
+.section-title h4::after { background: var(--color-theme) !important; }
+.section-title h2 span { color: var(--color-theme) !important; }
+
+/* Pillar section */
+.pillar__single__inner:hover { border-color: var(--color-theme) !important; }
+.pillar__single__inner:hover h3 { color: var(--color-theme) !important; }
+
+/* Activities */
+.activity__content h3 a:hover { color: var(--color-theme) !important; }
+
+/* Salat Times */
+.salat-times { background: var(--color-theme) !important; }
+.salat-times__box { border-color: rgba(255,255,255,0.3) !important; }
+
+/* Events */
+.event-single__content h3 a:hover { color: var(--color-theme) !important; }
+.event-single__date { background: var(--color-theme) !important; }
+
+/* Donation area */
+.offer-donation-area { background: var(--color-theme) !important; }
+
+/* Team */
+.hexagon { background: var(--color-theme) !important; }
+.hexagon__inner1 { background: var(--color-theme) !important; }
+.hexagon__inner2 { background: var(--color-theme) !important; }
+.team-member__content h5 { color: var(--color-theme) !important; }
+
+/* Blog */
+.cr-readmore { color: var(--color-theme) !important; }
+.cr-readmore:hover { background: var(--color-theme) !important; }
+.blog-title a:hover { color: var(--color-theme) !important; }
+.blog__content__meta a:hover { color: var(--color-theme) !important; }
+
+/* Products */
+.product__action ul li a:hover { background: var(--color-theme) !important; }
+.product__content h5 a:hover { color: var(--color-theme) !important; }
+.product-price { color: var(--color-theme) !important; }
+
+/* Footer */
+.footer-widget-title::after { background: var(--color-theme) !important; }
+.footer__links li a:hover { color: var(--color-theme) !important; }
+.footer__contact li i { color: var(--color-theme) !important; }
+.footer__bottom { background: var(--color-theme-dark) !important; }
+.footer__bottom a:hover { color: var(--color-theme-light) !important; }
+
+/* Social Icons */
+.social-icons ul li a:hover { background: var(--color-theme) !important; border-color: var(--color-theme) !important; }
+
+/* Mobile Menu */
+.mean-nav ul li a:hover { color: var(--color-theme) !important; }
+.meanmenu-reveal { color: var(--color-theme) !important; }
+.meanmenu-reveal span { background: var(--color-theme) !important; }
+
+/* Breadcrumb */
+.breadcrumb-area { background: var(--color-theme) !important; }
+.breadcrumb li a:hover { color: var(--color-theme-light) !important; }
+
+/* Pagination */
+.pagination li a:hover,
+.pagination li.active a { background: var(--color-theme) !important; border-color: var(--color-theme) !important; }
+
+/* Tags */
+.tagcloud a:hover { background: var(--color-theme) !important; border-color: var(--color-theme) !important; }
+
+/* Contact / Forms */
+.cr-btn[type="submit"]:hover { background: var(--color-theme-dark) !important; }
+input:focus, textarea:focus, select:focus { border-color: var(--color-theme) !important; }
+
+/* Donation Page */
+.donation-amount-btn.active,
+.donation-amount-btn:hover { background: var(--color-theme) !important; border-color: var(--color-theme) !important; }
+
+/* Cart / Wishlist / Checkout */
+.cart-table th { background: var(--color-theme) !important; }
+.quantity__btn:hover { background: var(--color-theme) !important; }
+
+/* Accountbox */
+.accountbox-btn:hover { background: var(--color-theme) !important; border-color: var(--color-theme) !important; }
+
+/* MiniCart */
+.minicart .subtotal-price span { color: var(--color-theme) !important; }
+
+/* Sticky Header */
+.header-area.sticky { border-bottom-color: var(--color-theme) !important; }
+
+/* ===== Logo Styles ===== */
+.logo img,
+.mobile-logo img,
+.image--logo img {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ===== Additional Polish ===== */
+/* Smooth transitions everywhere */
+a, button, .cr-btn { transition: all 0.3s ease-in-out !important; }
+
+/* Active nav link highlight */
+nav.menu ul li a.active,
+nav.menu ul li.current > a { color: #fff; font-weight: 600; }
